@@ -52,5 +52,5 @@ app.get("/bacheca", (req, res) => {
 
   let postNum = posts.length;
 
-  res.send();
+  res.json([posts, postNum]);
 });
