@@ -52,5 +52,10 @@ app.get("/bacheca", (req, res) => {
 
   let postNum = posts.length;
 
-  res.json([posts, ` Il numero dei post è: ${postNum}`]);
+  let resoconto = {
+    post: posts,
+    count: postNum,
+  };
+
+  res.json(resoconto);
 });
